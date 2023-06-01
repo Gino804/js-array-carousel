@@ -38,12 +38,14 @@ Al click delle frecce, oltre al cambio di immagine attiva, gestire il cambio di 
 - Creo una lista di nodi contenente le immagini
 - Assegno alla prima immagine una classe che la renda visibile
 - **QUANDO** l'utente clicca sulla freccia in alto
+  - Elimino all'immagine corrente la classe che la rende visibile
   - **SE** l'immagine visibile corrisponde all'immagine nell'ultima posizione della lista
-    - **FINE**
-  - Elimino all'immagine corrente la classe che la rende visibile
-  - Rendo visibile l'immagine nella posizione successiva
+    - Rendo visibile l'immagine alla prima posizione
+  - **ALTRIMENTI**
+    - Rendo visibile l'immagine nella posizione successiva
 - **QUANDO** l'utente clicca sulla freccia in basso
-  - **SE** l'immagine visibile corrisponde all'immagine nella prima posizione della lista
-    - **FINE**
   - Elimino all'immagine corrente la classe che la rende visibile
-  - Rendo visibile l'immagine nella posizione precedente
+  - **SE** l'immagine visibile corrisponde all'immagine nella prima posizione della lista
+    - Rendo visibile l'immagine all'ultima posizione
+  - **ALTRIMENTI**
+    - Rendo visibile l'immagine nella posizione precedente
