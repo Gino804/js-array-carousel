@@ -1,0 +1,38 @@
+.container
+{
+    height:300px;
+    width:1000px;
+    margin:auto;
+    text-align:center;
+    position:relative;
+}
+
+#gallery
+{
+    height:100%;
+}
+
+#gallery>img
+{
+    height:100%;
+    width:100%;
+    object-fit:cover;
+}
+
+.fa-solid
+{
+    position:relative;
+    color:white;
+    font-size:2rem;
+    opacity:0.6;
+}
+
+.fa-arrow-up
+{
+    top:2rem;
+}
+
+.fa-arrow-down
+{
+    bottom:2rem;
+}
