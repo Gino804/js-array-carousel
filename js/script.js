@@ -25,3 +25,34 @@ const images = document.querySelectorAll('#gallery>img');
 // Rendo visibile la prima immagine
 
 images[0].classList.add('d-block');
+let currentImage = 0; 
+
+// Al click della freccia in alto
+nextButton.addEventListener('click', function()
+{
+    // Se l'immagine corrente è l'ultima della lista
+    if(currentImage + 1 === images.length) return;
+
+    // Rendo invisibile l'immagine corrente
+    images[currentImage].classList.remove('d-block');
+
+    // Rendo visibile l'immagine successiva
+    images[currentImage + 1].classList.add('d-block');
+
+    currentImage++;
+})
+
+// Al click della freccia in basso
+previousButton.addEventListener('click', function()
+{
+    // Se l'immagine corrente è la prima della lista
+    if(!currentImage) return;
+
+    // Rendo invisibile l'immagine corrente
+    images[currentImage].classList.remove('d-block');
+
+    // Rendo visibile l'immagine precedente
+    images[currentImage - 1].classList.add('d-block');
+
+    currentImage--;
+})
