@@ -32,10 +32,10 @@ Al click delle frecce, oltre al cambio di immagine attiva, gestire il cambio di 
 ## Steps:
 
 - Recupero dal DOM gli elementi necessari
-- Creo una lista di nodi contenente le immagini
 - Inserisco nel DOM le immagini:
-  - **FINTANTO CHE** il contatore è minore della lunghezza della lista delle immagini
+  - **FINTANTO CHE** il contatore è minore di 5
     - Inserisco nel DOM l'immagine corrente
+- Creo una lista di nodi contenente le immagini
 - Assegno alla prima immagine una classe che la renda visibile
 - **QUANDO** l'utente clicca sulla freccia in alto
   - **SE** l'immagine visibile corrisponde all'immagine nell'ultima posizione della lista

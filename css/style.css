@@ -12,11 +12,12 @@
     height:100%;
 }
 
-#gallery>img
+img
 {
     height:100%;
     width:100%;
     object-fit:cover;
+    display:none;
 }
 
 .fa-solid
@@ -25,6 +26,7 @@
     color:white;
     font-size:2rem;
     opacity:0.6;
+    cursor:pointer;
 }
 
 .fa-arrow-up
@@ -35,4 +37,9 @@
 .fa-arrow-down
 {
     bottom:2rem;
+}
+
+.d-block
+{
+    display:block;
 }
