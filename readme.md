@@ -35,17 +35,27 @@ Al click delle frecce, oltre al cambio di immagine attiva, gestire il cambio di 
 - Inserisco nel DOM le immagini:
   - **FINTANTO CHE** il contatore è minore di 5
     - Inserisco nel DOM l'immagine corrente
+- BONUS - Inserisco nel DOM le thumbnails
+  - **FINTANTO CHE** il contatore è minore di 5
+    - Inserisco nel DOM la thumbnail corrente
 - Creo una lista di nodi contenente le immagini
+- BONUS - Creo una lista di nodi contenente le thumbnails
 - Assegno alla prima immagine una classe che la renda visibile
-- **QUANDO** l'utente clicca sulla freccia in alto
-  - Elimino all'immagine corrente la classe che la rende visibile
-  - **SE** l'immagine visibile corrisponde all'immagine nell'ultima posizione della lista
-    - Rendo visibile l'immagine alla prima posizione
-  - **ALTRIMENTI**
-    - Rendo visibile l'immagine nella posizione successiva
+- Creo una variabile che indichi l'immagine corrente e la inizializzo con il valore della prima immagine
+- BONUS - Rendo attiva la prima thumbnail
 - **QUANDO** l'utente clicca sulla freccia in basso
-  - Elimino all'immagine corrente la classe che la rende visibile
-  - **SE** l'immagine visibile corrisponde all'immagine nella prima posizione della lista
-    - Rendo visibile l'immagine all'ultima posizione
-  - **ALTRIMENTI**
-    - Rendo visibile l'immagine nella posizione precedente
+  - Rimuovo all'immagine corrente la classe che la rende visibile
+  - BONUS - Rimuovo alla thumbnail corrente la classe che la rende attiva
+  - **SE** L'immagine corrente è l'ultima della lista
+    - L'immagine corrente diventa l'ultima
+  - **ALTRIMENTI** L'immagine corrente diventa la successiva
+  - Assegno all'immagine corrente la classe che la rende visibile
+  - BONUS - Assegno alla thumbnail corrente la classe che la rende attiva
+- **QUANDO** l'utente clicca sulla freccia in alto
+  - Rimuovo all'immagine corrente la classe che la rende visibile
+  - BONUS - Rimuovo alla thumbnail corrente la classe che la rende attiva
+  - **SE** L'immagine corrente è la prima della lista
+    - L'immagine corrente diventa la prima
+  - **ALTRIMENTI** L'immagine corrente diventa la precedente
+  - Assegno all'immagine corrente la classe che la rende visibile
+  - BONUS - Assegno alla thumbnail corrente la classe che la rende attiva

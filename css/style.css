@@ -20,9 +20,27 @@ img
     display:none;
 }
 
+#thumbnails
+{
+    position:absolute;
+    top:32px;
+    bottom:-32px;
+    right:0;
+    width:150px;
+}
+
+#thumbnails>img
+{
+    display:block;
+    height:20%;
+    filter:brightness(40%);
+}
+
 .fa-solid
 {
     position:relative;
+    left:425px;
+    z-index:1;
     color:white;
     font-size:2rem;
     cursor:pointer;
@@ -41,4 +59,9 @@ img
 .d-block
 {
     display:block;
+}
+
+#thumbnails>.img-active
+{
+    filter:brightness(100%);
 }
